@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace MyProject_Mini_DnF
@@ -10,7 +11,7 @@ namespace MyProject_Mini_DnF
     public class PlyaerMoveClass
     {
         AllNumberClass AN = default;
-        BattleClass battle = default;
+
         public void AllNumSet(AllNumberClass allnum)
         {
             this.AN =allnum;
@@ -18,7 +19,8 @@ namespace MyProject_Mini_DnF
 
         public void PlayerMove() //플레이어 이동 메서드
         {
-            AN.playerMoveInput = Console.ReadKey(true);
+            
+        AN.playerMoveInput = Console.ReadKey(true);
 
             switch (AN.playerMoveInput.Key)
             {

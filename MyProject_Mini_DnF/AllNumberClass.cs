@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace MyProject_Mini_DnF
@@ -30,20 +32,22 @@ namespace MyProject_Mini_DnF
         public int bakalHousePos_X = 8;
 
         #endregion
-
+        
 
         #region 입력 변수들
-        public ConsoleKeyInfo playerMoveInput; //이동 할때 받을 변수
+        public ConsoleKeyInfo playerMoveInput;//이동 할때 받을 변수
+        public ConsoleKeyInfo playerBattleInput;
 
         #endregion
         #region 랜덤 변수
-        Random rand = new Random();
-        int randNum = default;
+        Random randNum = new Random();
+        
+        
         #endregion
 
         #region 플레이어 스텟 변수
-        public int playerDamegeReset = 50; //지휘관 버프시 증가한 대미지 돌리는용도
-        public int playerDamege = 50;
+        public int playerDamegeReset = 5000; //지휘관 버프시 증가한 대미지 돌리는용도
+        public int playerDamege = 5000;
 
         public int playerMaxHp = 500; //지휘관 버프시 오버 체력을 다시 돌려줄용도
         public int playerHp = 500;
@@ -62,6 +66,20 @@ namespace MyProject_Mini_DnF
         public int goldCrownHp = 500;
         public int goldCrownDamage = 70;
 
+        //아스타로스
+        public int astarosHp = 2500;
+        public int astarosDamage = 150;
+
+        //바칼
+        public int bakalHp = 10000;
+        public int bakalDamage = 300;
+        public int bakalMeet = 0;   //바칼과 첫조우인지볼 변수
+        public int bakalPhase = 1; //몇페이즈인지 알려줄 변수
+        public int bakalphase2Atk = 0;
+
         #endregion
+
+
+
     }
 }

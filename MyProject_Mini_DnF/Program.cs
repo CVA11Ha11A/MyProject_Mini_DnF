@@ -3,7 +3,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
+
 
 namespace MyProject_Mini_DnF
 {
@@ -11,10 +13,16 @@ namespace MyProject_Mini_DnF
     {
         static void Main(string[] args)
         {
-            //웨펀 컷신 9번째장 부터 찍으면됨 CutinClass에서 찍는중에 끝남
-            Console.SetWindowSize(230, 63);
+            //ThreadPool 
 
-            Console.SetBufferSize(230, 63);
+            //컷인 사운드 삽입중 끝남 프토로타입은 완성됨 
+            //현재 Thread방식으로 소리가끝나고 다음이 실행되는것이 아닌 멀티 실행으로 
+            //구현예정인데 쓰레드는 한번사용하면 다시선언해서 사용해줘야함 그래서 부를때마다 선언하게 할 예정
+            //ThreadPool 사용해야 할것같음
+
+            Console.SetWindowSize(150, 63);
+
+            Console.SetBufferSize(150, 63);
 
             Console.CursorVisible = false;
 
@@ -30,12 +38,23 @@ namespace MyProject_Mini_DnF
             mainField.AllNumSet(allNumber); //메인필드 인풋에 넣기
             playerMove.AllNumSet(allNumber);
             dungeonBattle.AllNumSet(allNumber);
+            dungeonBattle.CutinSet(cutin); //컷인 배틀클래스 에서 쓸수있게 넘기기
+            cutin.AllNumSet(allNumber);
             #endregion
 
+            Console.SetCursorPosition(1, 1);
 
-            cutin.WeaponCutin();
-            Console.WriteLine();
+            //dungeonBattle.BakalHuman();
+            //cutin.BakalIntro();
+            //cutin.BakalPhase2Intro();
 
+            //cutin.FloCutin();
+            //cutin.WeaponCutin();
+            //cutin.BakalPhase2Skill();
+
+            //Console.ReadLine();
+
+            
 
             while (true)
             {
