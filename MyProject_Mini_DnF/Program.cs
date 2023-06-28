@@ -2,9 +2,11 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using WMPLib;
 
 
 namespace MyProject_Mini_DnF
@@ -15,6 +17,11 @@ namespace MyProject_Mini_DnF
         {
             //ThreadPool 
 
+            
+
+            
+
+
             //컷인 사운드 삽입중 끝남 프토로타입은 완성됨 
             //현재 Thread방식으로 소리가끝나고 다음이 실행되는것이 아닌 멀티 실행으로 
             //구현예정인데 쓰레드는 한번사용하면 다시선언해서 사용해줘야함 그래서 부를때마다 선언하게 할 예정
@@ -23,6 +30,7 @@ namespace MyProject_Mini_DnF
             Console.SetWindowSize(150, 63);
 
             Console.SetBufferSize(150, 63);
+
 
             Console.CursorVisible = false;
 
@@ -42,19 +50,23 @@ namespace MyProject_Mini_DnF
             cutin.AllNumSet(allNumber);
             #endregion
 
+            Console.SetCursorPosition(20, 30);
+            Console.SetCursorPosition(1, 1);
+       
+
+
+
+
+
+            Console.Write("당신의 직업을 선택해주세요!");
+            Console.SetCursorPosition(20, 31);
+            Console.Write("1 = 웨펀마스터     2 = 스핏파이어");
+            Console.SetCursorPosition(20, 32);
+            allNumber.userClass = int.Parse(Console.ReadLine());
             Console.SetCursorPosition(1, 1);
 
-            //dungeonBattle.BakalHuman();
-            //cutin.BakalIntro();
-            //cutin.BakalPhase2Intro();
+            Console.Clear();
 
-            //cutin.FloCutin();
-            //cutin.WeaponCutin();
-            //cutin.BakalPhase2Skill();
-
-            //Console.ReadLine();
-
-            
 
             while (true)
             {

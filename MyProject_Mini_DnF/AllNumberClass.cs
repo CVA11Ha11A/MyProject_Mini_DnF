@@ -38,19 +38,36 @@ namespace MyProject_Mini_DnF
         public ConsoleKeyInfo playerMoveInput;//이동 할때 받을 변수
         public ConsoleKeyInfo playerBattleInput;
 
+        public int nowSound = 0;
+        public int themeCount = 0;
+
         #endregion
         #region 랜덤 변수
         Random randNum = new Random();
-        
-        
+
+
         #endregion
 
         #region 플레이어 스텟 변수
-        public int playerDamegeReset = 5000; //지휘관 버프시 증가한 대미지 돌리는용도
-        public int playerDamege = 5000;
+
+        //플레이어가 선택한 직업알려줄 변수
+
+        public int userClass = default;
+
+        //웨펀 마스터
+        public int playerDamegeReset = 1500; //지휘관 버프시 증가한 대미지 돌리는용도
+        public int playerDamege = 1500;
 
         public int playerMaxHp = 500; //지휘관 버프시 오버 체력을 다시 돌려줄용도
         public int playerHp = 500;
+
+
+        //스핏파이어
+        public int player2DamageReset = 60;
+        public int player2Damage = 60;
+
+        public int player2MaxHp = 450;
+        public int player2Hp = 450;
 
         public int playerRageCount = 0; //필살기 사용 조건
         #endregion
