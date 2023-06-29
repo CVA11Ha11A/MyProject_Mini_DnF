@@ -28,6 +28,9 @@ namespace MyProject_Mini_DnF
         public int dungeon_3Pos_Y = 8;//세번째 던전 좌표
         public int dungeon_3Pos_X = 14;
 
+        public int codenamePos_Y = 4; //코드네임 게이볼그 던전 좌표
+        public int codenamePos_X = 4;
+
         public int bakalHousePos_Y = 2; //바칼 레이드 좌표
         public int bakalHousePos_X = 8;
 
@@ -58,19 +61,26 @@ namespace MyProject_Mini_DnF
         public int playerDamegeReset = 1500; //지휘관 버프시 증가한 대미지 돌리는용도
         public int playerDamege = 1500;
 
-        public int playerMaxHp = 500; //지휘관 버프시 오버 체력을 다시 돌려줄용도
-        public int playerHp = 500;
+        public int playerMaxHp = 5500; //지휘관 버프시 오버 체력을 다시 돌려줄용도
+        public int playerHp = 5500;
+
+        public int playerDef = 0;
+        public int playerDefReset = 0;
 
 
         //스핏파이어
-        public int player2DamageReset = 60;
-        public int player2Damage = 60;
+        public int player2DamageReset = 1600;
+        public int player2Damage = 1600;
 
-        public int player2MaxHp = 450;
-        public int player2Hp = 450;
+        public int player2Def = 0; //사라 지휘관버프로 한턴 데미지 무효화할때 필요
+        public int player2DefReset = 0;
+
+        public int player2MaxHp = 4500;
+        public int player2Hp = 4500;
 
         public int playerRageCount = 0; //필살기 사용 조건
         #endregion
+
 
 
         #region 몬스터 변수
@@ -93,6 +103,32 @@ namespace MyProject_Mini_DnF
         public int bakalMeet = 0;   //바칼과 첫조우인지볼 변수
         public int bakalPhase = 1; //몇페이즈인지 알려줄 변수
         public int bakalphase2Atk = 0;
+
+        #endregion
+
+        #region 코드네임 게이볼그 관련 변수
+
+        //디리겐트 변수
+        public int dirigent​Hp = 1000;
+        public int dirigentHpReset = 1000;
+        public int dirigentDamage = 100;
+
+        public int dirigentMeet = 0; //디리겐트 첫만남 이벤트를위한변수
+
+        public int dirigentKill = 0; //다음층을 가기위한 변수
+
+        //이덴디테이트 변수
+        public int idenditate​Hp = 1500;
+        public int idenditateHpReset = 1500;
+        public int idenditateDamage = 170;
+
+        public int idenditateMeet = 0; //이덴디테이트 첫만남 이벤트를위한변수
+        public int idenditateKill = 0; //다음층을 가기위한 변수
+        //게이볼그 변수
+        public int gaeBolgHp = 3000;
+        public int gaeBolgHpReset = 3000;
+        public int gaeBoldDamage = 230;
+
 
         #endregion
 

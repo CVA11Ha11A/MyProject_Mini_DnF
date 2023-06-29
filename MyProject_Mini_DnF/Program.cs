@@ -17,9 +17,9 @@ namespace MyProject_Mini_DnF
         {
             //ThreadPool 
 
-            
 
-            
+            Console.OutputEncoding = Encoding.UTF8;
+
 
 
             //컷인 사운드 삽입중 끝남 프토로타입은 완성됨 
@@ -52,16 +52,22 @@ namespace MyProject_Mini_DnF
 
             Console.SetCursorPosition(20, 30);
             Console.SetCursorPosition(1, 1);
-       
 
 
+            //dungeonBattle.DirigentFirstMeet();
+
+            dungeonBattle.IdenditateOutput();
+            Console.SetCursorPosition(1, 46);
+            Console.Write("1");
 
 
+            Console.ReadLine();
 
-            Console.Write("당신의 직업을 선택해주세요!");
             Console.SetCursorPosition(20, 31);
-            Console.Write("1 = 웨펀마스터     2 = 스핏파이어");
+            Console.Write("당신의 직업을 선택해주세요!");
             Console.SetCursorPosition(20, 32);
+            Console.Write("1 = 웨펀마스터     2 = 스핏파이어");
+            Console.WriteLine();
             allNumber.userClass = int.Parse(Console.ReadLine());
             Console.SetCursorPosition(1, 1);
 

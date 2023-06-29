@@ -67,6 +67,12 @@ namespace MyProject_Mini_DnF
                         AN.mainField[y, x]  = "3 ";
                         continue;
                     }
+                    if(AN.codenamePos_Y == y && AN.codenamePos_X == x) //코드네임 게이볼그
+                    {
+                        AN.mainField[y, x] = "C ";
+                        continue;
+                    }
+
                    
                     AN.mainField[y, x] = "* "; //필드
                 }
