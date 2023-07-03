@@ -54,15 +54,6 @@ namespace MyProject_Mini_DnF
             Console.SetCursorPosition(1, 1);
 
 
-            //dungeonBattle.DirigentFirstMeet();
-
-            dungeonBattle.IdenditateOutput();
-            Console.SetCursorPosition(1, 46);
-            Console.Write("1");
-
-
-            Console.ReadLine();
-
             Console.SetCursorPosition(20, 31);
             Console.Write("당신의 직업을 선택해주세요!");
             Console.SetCursorPosition(20, 32);
@@ -71,13 +62,14 @@ namespace MyProject_Mini_DnF
             allNumber.userClass = int.Parse(Console.ReadLine());
             Console.SetCursorPosition(1, 1);
 
+
             Console.Clear();
 
 
             while (true)
             {
-               Console.SetCursorPosition(0, 0);
-               mainField.FieldInput();
+             Console.SetCursorPosition(0, 0);
+             mainField.FieldInput();
              mainField.FieldOutput();
              playerMove.PlayerMove();
              dungeonBattle.DungeonIn();
@@ -85,6 +77,7 @@ namespace MyProject_Mini_DnF
 
 
             }
+
 
         }
     }

@@ -58,11 +58,11 @@ namespace MyProject_Mini_DnF
         public int userClass = default;
 
         //웨펀 마스터
-        public int playerDamegeReset = 1500; //지휘관 버프시 증가한 대미지 돌리는용도
-        public int playerDamege = 1500;
+        public int playerDamegeReset = 3500; //지휘관 버프시 증가한 대미지 돌리는용도
+        public int playerDamege = 3500;
 
-        public int playerMaxHp = 5500; //지휘관 버프시 오버 체력을 다시 돌려줄용도
-        public int playerHp = 5500;
+        public int playerMaxHp = 500; //지휘관 버프시 오버 체력을 다시 돌려줄용도
+        public int playerHp = 500;
 
         public int playerDef = 0;
         public int playerDefReset = 0;
@@ -124,10 +124,23 @@ namespace MyProject_Mini_DnF
 
         public int idenditateMeet = 0; //이덴디테이트 첫만남 이벤트를위한변수
         public int idenditateKill = 0; //다음층을 가기위한 변수
+
+        //지젤변수
+
+        public int gizelHp = 500;
+        public int gizelHpMax = 500;
+        public int gizelDamage = 50;
+
+        public int gizelMeet = 0;
+        public int gizelKill = 0;
+
+
         //게이볼그 변수
-        public int gaeBolgHp = 3000;
-        public int gaeBolgHpReset = 3000;
-        public int gaeBoldDamage = 230;
+        public int gaebolgHp = 3000;
+        public int gaebolgHpReset = 3000;
+        public int gaebolgDamage = 250;
+
+        public int gaebolgMeet = 0;
 
 
         #endregion

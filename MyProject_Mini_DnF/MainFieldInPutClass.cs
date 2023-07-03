@@ -86,7 +86,8 @@ namespace MyProject_Mini_DnF
                 for(int x = 0; x < 17; x++)
                 {
                     //프로토 타입 이후에 커서로 예쁘게 만들기
-                    //Console.SetCursorPosition(y+2,x+2);// 커서 위치 조정 예정
+                    //Console.SetCursorPosition(x+21,y+20);// 커서 위치 조정 예정
+
                     Console.Write("{0}", AN.mainField[y, x]);
                 }
                 Console.WriteLine();

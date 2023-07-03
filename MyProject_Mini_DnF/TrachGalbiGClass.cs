@@ -446,6 +446,31 @@ namespace MyProject_Mini_DnF
         //}
 
 
-        //이리네 컷인
+        //이리네 컷인.
+
+
+        //스핏 진각 사운드 넣으려시도했는데 터져버림
+
+        //public void SpitFireSkillImpect()
+        //{
+        //    spitSkillImpect001.URL = @"C:\MyProject_Mini_DnF\MyProject_Mini_DnF\SoundTrack\SpitFire\NeoSpitSkillSound.mp3";
+
+
+
+        //    ThreadPool.QueueUserWorkItem(_ => 
+        //    {
+        //        spitSkillImpect001.controls.stop();
+        //        Thread.Sleep(3500);
+
+        //        spitSkillImpect001.controls.play();
+
+        //        Thread.Sleep(1500);
+        //        spitSkillImpect001.close();
+
+
+
+        //    });
+
+        //}
     }
 }
